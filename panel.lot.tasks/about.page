@@ -1,0 +1,10 @@
+---
+title: Panel Lot Folder Manager
+description: Manage `.\lot\*` folders directly from the control panel interface.
+author: Taufik Nurrohman
+type: Markdown
+version: 0.0.0
+
+use:
+  '.\lot\x\panel': 1
+...
