@@ -1,5 +1,5 @@
-Lot Folder Manager for Mecha&rsquo;s [Panel](https://github.com/mecha-cms/x.panel)
-==================================================================================
+Feature Enhancer for Mecha&rsquo;s [Panel](https://github.com/mecha-cms/x.panel)
+================================================================================
 
 Release Notes
 -------------
