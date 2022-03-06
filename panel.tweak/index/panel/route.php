@@ -1,7 +1,12 @@
 <?php namespace x\panel\route;
 
-function __tweaks($_) {
+function __tweak($_) {
     \extract($GLOBALS, \EXTR_SKIP);
+    // Disable page offset feature
+    if (!empty($_['part'])) {
+        $_['kick'] = \x\panel\to\link(['part' => 0]);
+        return $_;
+    }
     $_['status'] = 200;
     $_['type'] = 'state';
     $_['lot']['bar']['lot'][0]['lot']['search']['skip'] = true;
