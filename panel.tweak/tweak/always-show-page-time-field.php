@@ -8,4 +8,4 @@ Hook::set('_', function($_) {
         }
     }
     return $_;
-}, 50);
+}, 10.2);

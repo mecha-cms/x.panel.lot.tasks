@@ -12,8 +12,6 @@ $_['lot']['bar']['lot'][1]['lot']['tweak'] = [
     ]
 ];
 
-require __DIR__ . D . 'panel' . D . 'route.php';
-
 foreach ((array) ($state->x->{'panel.tweak'} ?? []) as $k => $v) {
     if (!$v) {
         continue;
@@ -25,3 +23,5 @@ foreach ((array) ($state->x->{'panel.tweak'} ?? []) as $k => $v) {
         }
     })($tweak);
 }
+
+require __DIR__ . D . 'panel' . D . 'route.php';

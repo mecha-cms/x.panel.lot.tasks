@@ -5,4 +5,4 @@ Hook::set('_', function($_) {
         $_['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['page']['lot']['fields']['lot']['name']['skip'] = false;
     }
     return $_;
-}, 50);
+}, 10.2);

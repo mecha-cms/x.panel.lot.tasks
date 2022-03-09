@@ -10,7 +10,7 @@ Hook::set('_', function($_) use($zip) {
                 'description' => 'Download as ZIP',
                 'icon' => 'M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z',
                 'skip' => !$not_void,
-                'stack' => 11,
+                'stack' => 10.001, // Put just after the “Upload” button
                 'title' => false,
                 'type' => 'link',
                 'url' => $not_void ? [
@@ -73,4 +73,4 @@ Hook::set('_', function($_) use($zip) {
         }
     }
     return $_;
-}, 50);
+}, 10.2);
