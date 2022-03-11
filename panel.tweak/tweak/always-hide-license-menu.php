@@ -7,6 +7,8 @@ if ('POST' === $_SERVER['REQUEST_METHOD']) {
 }
 
 Hook::set('_', function($_) {
-    $_['lot']['bar']['lot'][1]['lot']['license']['skip'] = false;
+    $_['lot']['bar']['lot'][1]['lot']['license']['skip'] = true;
     return $_;
 }, 10.2);
+
+return $_;
