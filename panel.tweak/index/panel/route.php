@@ -21,6 +21,7 @@ function __tweak($_) {
             'title' => $n
         ];
     }
+    $_['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['file']['skip'] = true;
     $_['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['tweaks'] = [
         'lot' => [
             'tweaks' => [
