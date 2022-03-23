@@ -11,8 +11,8 @@ function __tweak($_) {
     $_['type'] = 'state';
     $_['lot']['bar']['lot'][0]['lot']['search']['skip'] = true;
     $_['lot']['bar']['lot'][0]['lot']['set']['skip'] = true;
-    $_['lot']['desk']['lot']['form']['data']['path'] = 'x/panel.tweak';
-    $_['lot']['desk']['lot']['form']['data']['file']['name'] = 'state.php';
+    $_['lot']['desk']['lot']['form']['values']['file']['name'] = 'state.php';
+    $_['lot']['desk']['lot']['form']['values']['path'] = 'x/panel.tweak';
     $lot = [];
     foreach (\g(__DIR__ . \D . '..' . \D . '..' . \D . 'tweak', 'php') as $k => $v) {
         $lot[$n = \basename($k, '.php')] = [
