@@ -12,8 +12,9 @@ $content = <<<CSS
 }
 CSS;
 
-$_['asset']['style'][] = [
-    'content' => $content,
+$_['asset']['vertical-form-label'] = [
+    'id' => false,
+    'link' => 'data:text/css;base64,' . base64_encode($content),
     'stack' => 20
 ];
 
