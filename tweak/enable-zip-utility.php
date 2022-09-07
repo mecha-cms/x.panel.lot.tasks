@@ -2,7 +2,7 @@
 
 $zip = extension_loaded('zip');
 
-Hook::set('_', function($_) use($zip) {
+Hook::set('_', function ($_) use ($zip) {
     if (0 === strpos($_['type'] . '/', 'files/')) {
         if (!empty($_['lot']['desk']['lot']['form']['lot'][0]['lot']['tasks'])) {
             $_['lot']['desk']['lot']['form']['lot'][0]['lot']['tasks']['lot']['pack'] = [

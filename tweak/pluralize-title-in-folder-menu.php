@@ -1,6 +1,6 @@
 <?php
 
-Hook::set('_', function($_) {
+Hook::set('_', function ($_) {
     $_['lot']['bar']['lot'][0]['lot']['folder']['lot'];
     if (!empty($_['lot']['bar']['lot'][0]['lot']['folder']['lot'])) {
         foreach ($_['lot']['bar']['lot'][0]['lot']['folder']['lot'] as &$v) {

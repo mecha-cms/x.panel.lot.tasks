@@ -16,7 +16,7 @@ foreach ((array) ($state->x->{'panel.tweak'} ?? []) as $k => $v) {
     if (!$v) {
         continue;
     }
-    is_file($tweak = __DIR__ . D . '..' . D . 'tweak' . D . $k . '.php') && (static function($f) {
+    is_file($tweak = __DIR__ . D . '..' . D . 'tweak' . D . $k . '.php') && (static function ($f) {
         extract($GLOBALS, EXTR_SKIP);
         if ($_ = require $f) {
             $GLOBALS['_'] = array_replace_recursive($GLOBALS['_'], (array) $_);
