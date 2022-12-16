@@ -1,0 +1,8 @@
+{
+  "description": "Adds a variety of control panel features with minimal effort.",
+  "license": "GPL-3.0-or-later",
+  "name": "mecha-cms/x.panel.tweak",
+  "require": {
+    "mecha-cms/x.panel": "^3.0.0"
+  }
+}
