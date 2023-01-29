@@ -16,6 +16,7 @@ function __tweak($_) {
     $lot = [];
     foreach (\g(__DIR__ . \D . '..' . \D . '..' . \D . 'tweak', 'php') as $k => $v) {
         $lot[$n = \basename($k, '.php')] = [
+            'active' => !isset($_['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['tweaks']['lot']['tweaks']['lot'][$n]['active']) || $_['lot']['desk']['lot']['form']['lot'][1]['lot']['tabs']['lot']['tweaks']['lot']['tweaks']['lot'][$n]['active'],
             'name' => 'state[' . $n . ']',
             'value' => 1,
             'title' => $n
