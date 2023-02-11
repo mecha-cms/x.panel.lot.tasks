@@ -11,8 +11,6 @@ function __tweak($_) {
     $_['type'] = 'state';
     $_['lot']['bar']['lot'][0]['lot']['search']['skip'] = true;
     $_['lot']['bar']['lot'][0]['lot']['set']['skip'] = true;
-    $_['lot']['desk']['lot']['form']['values']['file']['name'] = 'state.php';
-    $_['lot']['desk']['lot']['form']['values']['path'] = 'x/panel.tweak';
     $lot = [];
     foreach (\g(__DIR__ . \D . '..' . \D . '..' . \D . 'tweak', 'php') as $k => $v) {
         $lot[$n = \basename($k, '.php')] = [
@@ -35,5 +33,11 @@ function __tweak($_) {
         'stack' => 10,
         'type' => 'fields'
     ];
+    // Had to set these hidden value(s) later because panel route(s) will be executed before native type definition file(s)
+    \Hook::set('_', function ($_) {
+        $_['lot']['desk']['lot']['form']['values']['file']['name'] = 'state.php';
+        $_['lot']['desk']['lot']['form']['values']['path'] = 'x/panel.tweak';
+        return $_;
+    }, 0);
     return $_;
 }

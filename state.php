@@ -1,1 +1,3 @@
-<?php return [];
+<?php
+
+return ['enable-zip-utility' => 1];
