@@ -6,7 +6,4 @@ color: '#84336f'
 author: Taufik Nurrohman
 type: Markdown
 version: 0.0.0
-
-use:
-  '.\lot\x\panel': 1
 ...
