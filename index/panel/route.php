@@ -33,11 +33,8 @@ function __tweak($_) {
         'stack' => 10,
         'type' => 'fields'
     ];
-    // Had to set these hidden value(s) later because panel route(s) will be executed before native type definition file(s)
-    \Hook::set('_', function ($_) {
-        $_['lot']['desk']['lot']['form']['values']['file']['name'] = 'state.php';
-        $_['lot']['desk']['lot']['form']['values']['path'] = 'x/panel.tweak';
-        return $_;
-    }, 0);
+    $_['lot']['desk']['lot']['form']['values']['file']['name'] = 'state.php';
+    $_['lot']['desk']['lot']['form']['values']['path'] = 'x/panel.tweak';
+    $GLOBALS['file'] = $file = new \File(\LOT . \D . 'x' . \D . 'panel.tweak' . \D . 'state.php');
     return $_;
 }
